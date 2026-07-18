@@ -8,12 +8,28 @@
   <style>
     :root{--bg:#07131c;--panel:#0d202d;--panel2:#102a38;--text:#ecf5f8;--muted:#9bb4c0;--line:#244556;--accent:#71bf49;--amber:#ffc857;--blue:#72c7e6}
     *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:linear-gradient(145deg,#06111a,#0a1b27 45%,#07131c);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(1100px,100%);margin:auto;padding:20px 16px 48px}header,.card,.section{border:1px solid var(--line);border-radius:14px;background:rgba(13,32,45,.92)}header{border-left:5px solid var(--accent);padding:22px}h1{margin:0 0 4px;font-size:clamp(1.6rem,5vw,2.35rem);line-height:1.12}h2{margin:0 0 12px;font-size:1.15rem}h3{margin:0 0 7px;font-size:1rem;line-height:1.3}p{margin:0 0 10px}ul{margin:8px 0 0;padding-left:20px}li+li{margin-top:5px}a{color:#83d5f1;text-decoration-thickness:1px;text-underline-offset:2px}.eyebrow{color:var(--accent);font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.meta{margin-top:10px;color:var(--muted);font-size:.9rem}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:16px 0}.card,.section{padding:16px}.card h2{color:var(--muted);font-size:.79rem;letter-spacing:.06em;text-transform:uppercase}.metric{margin:3px 0 6px;font-size:1.08rem;font-weight:800;line-height:1.25}.detail,.quiet{color:var(--muted);font-size:.88rem;line-height:1.45}.section{margin-top:16px}.item{border-top:1px solid var(--line);padding:14px 0}.item:first-of-type{border-top:0;padding-top:0}.tag{display:inline-block;margin:0 5px 7px 0;padding:2px 8px;border-radius:999px;background:#173747;color:#b9e5f2;font-size:.74rem;font-weight:750}.tag.high{background:#542a2a;color:#ffb4b4}.tag.watch{background:#4c3d20;color:#ffe09a}.fact{color:var(--blue);font-weight:800}.why{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 7px 7px 0;background:rgba(113,191,73,.08)}.sources{margin-top:10px;color:var(--muted);font-size:.88rem}.pulse{border-color:#3b6a4b;background:linear-gradient(90deg,rgba(113,191,73,.10),rgba(13,32,45,.92) 56%)}footer{margin-top:16px;padding:16px;color:var(--muted);border-top:1px solid var(--line);font-size:.84rem}@media(max-width:760px){main{padding:12px 11px 32px}header,.card,.section{border-radius:11px}header{padding:17px}.grid{grid-template-columns:1fr 1fr;gap:10px}.card,.section{padding:14px}h1{font-size:1.75rem}.metric{font-size:1rem}}@media(max-width:390px){.grid{grid-template-columns:1fr}}
+    /* Winston Noir / Executive Command Deck */
+    :root{--bg:#090909;--panel:#171717;--panel2:#2A2A2A;--text:#F5F2EA;--muted:#A7A7A7;--line:rgba(198,161,91,.42);--accent:#C6A15B;--gold-hi:#E0BE78;--emerald:#3D8C73;--crimson:#A84A4A;--blue:#D7D1C5}
+    html{background:var(--bg)}
+    body{background:radial-gradient(1000px 520px at 84% -10%,rgba(198,161,91,.09),transparent 62%),linear-gradient(145deg,#090909,#101010 46%,#090909);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.002em}
+    main{width:min(1140px,100%);padding:32px 18px 56px}
+    header,.card,.section{background:linear-gradient(145deg,rgba(42,42,42,.72),rgba(23,23,23,.92));border-color:var(--line);box-shadow:0 16px 34px rgba(0,0,0,.22)}
+    header{position:relative;overflow:hidden;border-left:1px solid var(--line);border-top:2px solid var(--accent);padding:28px}
+    header:after{content:"";position:absolute;left:28px;right:28px;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.82}
+    h1{font-weight:680;letter-spacing:-.035em;color:var(--text)}h2{font-weight:650;letter-spacing:-.015em;color:var(--text)}h3{font-weight:650;color:var(--text)}
+    .eyebrow,.card h2{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;color:var(--accent);font-weight:700;letter-spacing:.12em}.meta,.detail,.quiet,.sources{color:var(--muted)}
+    .grid{gap:12px;margin:18px 0}.card,.section{border-radius:10px}.card{min-height:142px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}.card:hover{transform:translateY(-2px);border-color:rgba(224,190,120,.72);box-shadow:0 20px 38px rgba(0,0,0,.32)}.metric{color:var(--text);font-weight:700}
+    a{color:var(--gold-hi);text-decoration-color:rgba(224,190,120,.48)}a:hover{color:var(--text);text-decoration-color:var(--gold-hi)}
+    .tag{border:1px solid rgba(198,161,91,.37);background:rgba(198,161,91,.12);color:#E8D4A5;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.69rem;letter-spacing:.035em}.tag.high{border-color:rgba(168,74,74,.62);background:rgba(168,74,74,.16);color:#E7A9A9}.tag.watch{border-color:rgba(224,190,120,.58);background:rgba(198,161,91,.16);color:#EFD9A2}.fact{color:var(--gold-hi)}
+    .pulse{border-color:rgba(198,161,91,.62);background:linear-gradient(90deg,rgba(198,161,91,.12),rgba(23,23,23,.92) 62%)}.why{border-left-color:var(--accent);background:rgba(198,161,91,.08);color:#DED8CD}.section{margin-top:18px}.item{border-top-color:rgba(167,167,167,.16)}
+    footer{border-top-color:var(--line);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted);font-size:.78rem;letter-spacing:.01em}
+    @media(max-width:760px){main{padding:18px 12px 40px}header{padding:22px 18px}header:after{left:18px;right:18px}.grid{grid-template-columns:1fr 1fr;gap:10px}.card{min-height:auto}.section,.card{padding:15px}h1{font-size:clamp(1.8rem,9vw,2.45rem)}}
   </style>
 </head>
 <body>
   <main>
     <header>
-      <div class="eyebrow">Daily intelligence monitor</div>
+      <div class="eyebrow">Winston Noir / Executive Command Deck</div>
       <h1>US Oil &amp; Gas Daily Brief</h1>
       <div class="meta"><strong>Covered business date:</strong> Thursday, July 16, 2026<br><strong>Generated:</strong> Saturday, July 18, 2026 • 12:41 AM CT (CDT) &nbsp;•&nbsp; Public sources only</div>
     </header>
